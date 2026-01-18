@@ -2,33 +2,64 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-12 border-t border-accent/20">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-xl font-serif mb-4">Badriville Resort</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Experience the serenity of the Himalayas with luxury and comfort. Your perfect getaway in Badrinath.
+    <footer className="bg-primary text-white pt-24 pb-12 border-t border-white/5">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+          
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <Link href="/" className="text-3xl font-serif font-bold text-white tracking-widest uppercase block mb-8">
+              Badriville
+            </Link>
+            <p className="text-white/60 text-sm leading-relaxed font-light">
+              A sanctuary in the Himalayas where luxury meets serenity. Experience the divine beauty of Badrinath with us.
             </p>
           </div>
+
+          {/* Navigation */}
           <div>
-            <h3 className="text-xl font-serif mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li><Link href="/about-us" className="hover:text-secondary">About Us</Link></li>
-              <li><Link href="/rooms" className="hover:text-secondary">Accommodation</Link></li>
-              <li><Link href="/services" className="hover:text-secondary">Services</Link></li>
-              <li><Link href="/contact-us" className="hover:text-secondary">Contact Us</Link></li>
+            <h4 className="text-[10px] uppercase tracking-widest text-accent mb-8 font-bold">Explore</h4>
+            <ul className="space-y-4 text-sm text-white/60 font-light">
+              <li><Link href="/about-us" className="hover:text-white transition-colors">Our Story</Link></li>
+              <li><Link href="/rooms" className="hover:text-white transition-colors">Accommodations</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors">Experiences</Link></li>
+              <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
             </ul>
           </div>
+
+          {/* Contact */}
           <div>
-            <h3 className="text-xl font-serif mb-4">Contact</h3>
-            <p className="text-gray-300 text-sm mb-2">Nagini Hills Badrinath, near ISBT Badrinath, Joshimath, Uttarakhand 246443</p>
-            <p className="text-gray-300 text-sm">Phone: +91 123 456 7890</p>
-            <p className="text-gray-300 text-sm">Email: info@badriville.com</p>
+            <h4 className="text-[10px] uppercase tracking-widest text-accent mb-8 font-bold">Contact</h4>
+            <ul className="space-y-4 text-sm text-white/60 font-light">
+              <li>Nagini Hills Badrinath,<br/> Joshimath, Uttarakhand 246443</li>
+              <li><a href="tel:+911234567890" className="hover:text-white transition-colors">+91 123 456 7890</a></li>
+              <li><a href="mailto:info@badriville.com" className="hover:text-white transition-colors">info@badriville.com</a></li>
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h4 className="text-[10px] uppercase tracking-widest text-accent mb-8 font-bold">Newsletter</h4>
+            <p className="text-white/60 text-sm mb-6 font-light">Subscribe for exclusive offers and updates.</p>
+            <div className="flex border-b border-white/20 pb-2">
+              <input 
+                type="email" 
+                placeholder="Your Email Address" 
+                className="bg-transparent border-none outline-none text-white text-sm w-full placeholder-white/30"
+              />
+              <button className="text-[10px] uppercase tracking-widest text-white hover:text-accent transition-colors">
+                Send
+              </button>
+            </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-white/10 text-center text-xs text-gray-400">
-          &copy; {new Date().getFullYear()} Badriville Resort. All rights reserved.
+
+        <div className="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] text-white/40 font-light uppercase tracking-widest">
+          <p>&copy; {new Date().getFullYear()} Badriville Resort. All rights reserved.</p>
+          <div className="flex gap-8 mt-6 md:mt-0">
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -9,15 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#3E2723", // Dark Brown
-        secondary: "#D7CCC8", // Light Brown/Cream
-        accent: "#A1887F", // Muted Brown
-        background: "#FAFAFA", // Off-white
-        text: "#212121", // Dark Grey
+        primary: "#1c1c1c", // Almost Black
+        secondary: "#f4f4f0", // Stone / Warm White
+        accent: "#c0a080", // Muted Bronze
+        background: "#ffffff", // Pure White
+        text: "#2d2d2d", // Dark Grey
+        "text-light": "#757575", // Medium Grey
       },
       fontFamily: {
         serif: ['var(--font-playfair-display)', 'serif'],
         sans: ['var(--font-lato)', 'sans-serif'],
+      },
+      letterSpacing: {
+        tighter: '-0.05em',
+        tight: '-0.025em',
+        normal: '0em',
+        wide: '0.025em',
+        wider: '0.05em',
+        widest: '0.2em', // Increased for that luxury label look
       },
     },
   },
