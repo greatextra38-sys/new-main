@@ -9,11 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#3E2723", // Dark Brown
-        secondary: "#D7CCC8", // Light Brown/Cream
-        accent: "#A1887F", // Muted Brown
-        background: "#FAFAFA", // Off-white
-        text: "#212121", // Dark Grey
+        primary: "#1e293b", // Deep Slate Blue / Charcoal
+        secondary: "#f8f5f2", // Soft Cream / Off-white
+        accent: "#c5a059", // Muted Gold / Bronze
+        background: "#ffffff", // Pure White
+        text: "#333333", // Dark Charcoal for text
+        "text-light": "#64748b", // Muted Slate for secondary text
       },
       fontFamily: {
         serif: ['var(--font-playfair-display)', 'serif'],
