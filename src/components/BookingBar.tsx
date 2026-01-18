@@ -1,6 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 
 const BookingBar = () => {
+  const whatsappNumber = "7579183761";
+
+  const handleCheckAvailability = () => {
+    const message = `Hi, I'd like to check availability at Badriville Resort. Please provide details about room availability and pricing.`;
+    const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="fixed bottom-0 left-0 w-full bg-white z-40 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] border-t border-gray-100 py-4 px-4 md:py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
@@ -24,12 +34,12 @@ const BookingBar = () => {
              <span className="text-xs text-text-light uppercase tracking-widest">Book Your Stay</span>
              <span className="font-serif text-lg text-primary">Best Rate Guarantee</span>
           </div>
-          <Link 
-            href="/booking" 
+          <button 
+            onClick={handleCheckAvailability}
             className="bg-primary text-white px-8 py-3 md:px-10 md:py-4 text-xs md:text-sm uppercase tracking-widest hover:bg-accent transition-colors duration-300"
           >
             Check Availability
-          </Link>
+          </button>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function AboutUs() {
         image="/assets/img/resort-bg.jpg"
       />
       
-      <section className="py-20">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif text-primary mb-6">Our Story</h2>
@@ -22,7 +22,7 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div className="relative aspect-[4/3]">
                <img 
                   src="/assets/img/homestay-bg.jpg" 
@@ -38,6 +38,75 @@ export default function AboutUs() {
               <p className="text-gray-600 leading-relaxed">
                 We invite you to slow down, breathe in the crisp mountain air, and reconnect with yourself in the lap of nature.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h4 className="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4">Our Values</h4>
+            <h2 className="text-3xl md:text-4xl font-serif text-primary">What We Stand For</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-serif text-primary mb-3">Authentic Hospitality</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">We treat every guest as family, ensuring personalized care and warm Himalayan hospitality.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-serif text-primary mb-3">Sustainability</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Committed to eco-friendly practices and preserving the pristine beauty of our mountains.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-serif text-primary mb-3">Excellence</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Dedicated to maintaining the highest standards in accommodation, service, and guest experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h4 className="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4">Our Team</h4>
+            <h2 className="text-3xl md:text-4xl font-serif text-primary mb-6">Meet the People Behind Badriville</h2>
+            <p className="text-gray-600 leading-relaxed mb-12">
+              Our dedicated team of local experts and hospitality professionals work tirelessly to ensure your stay is nothing short of extraordinary. From our experienced guides to our culinary experts, each member brings passion and expertise to create unforgettable moments.
+            </p>
+            <div className="flex flex-wrap justify-center gap-8">
+              <div className="text-center">
+                <div className="text-4xl font-serif text-accent mb-2">25+</div>
+                <p className="text-sm text-gray-600 uppercase tracking-wider">Years Experience</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-serif text-accent mb-2">50+</div>
+                <p className="text-sm text-gray-600 uppercase tracking-wider">Team Members</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-serif text-accent mb-2">10K+</div>
+                <p className="text-sm text-gray-600 uppercase tracking-wider">Happy Guests</p>
+              </div>
             </div>
           </div>
         </div>
